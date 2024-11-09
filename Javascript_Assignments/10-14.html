@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Java-script assignments chapter 10 to 14
+
+Make a Calculator
+input a value from user for example num1 is 7
+input a second value from user for example num2 is 3
+input a third value from user for example sign is "+" or "-" or "*" or "/" or "%"
+print operation in alert() 7-3 =4, or 7*3 =21, or 7/3 =2.3, or 7+3 =10 or 7%3 =1 -->
+
+<script>
+
+// Assignment 1 
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+let sign = prompt("Enter the operation + - * / % ");
+
+// Perform the operation and display the result
+if (sign === "+") {
+    alert(`${num1} + ${num2} = ${num1 + num2}`);
+} else if (sign === "-") {
+    alert(`${num1} - ${num2} = ${num1 - num2}`);
+} else if (sign === "*") {
+    alert(`${num1} * ${num2} = ${num1 * num2}`);
+} else if (sign === "/") {
+    alert(`${num1} / ${num2} = ${num1 / num2}`);
+} else if (sign === "%") {
+    alert(`${num1} % ${num2} = ${num1 % num2}`);
+} else {
+    alert("Choose an operation and add numbers")
+}
+    
+
+</script>
+
+
+
+<!-- Get the 5-course number from the userfor example course1 is 70 var totalMarks = 500
+Calculate the total percentage formula:  obtainedMarks * 100/ totalMarks
+print output in alert. -->
+
+<script>
+
+    // Assignment 2
+    let Math = parseInt(prompt("Enter your Math Marks"))
+    let Computer = parseInt(prompt("Enter your Computer Marks"))
+    let Physics = parseInt(prompt("Enter your Physics Marks"))
+    let Chemistry = parseInt(prompt("Enter your Chemistry Marks"))
+    let English = parseInt(prompt("Enter your Englis Marks"))
+    let obtainedMarks = Math + Chemistry + Computer + Physics + English
+    let result = obtainedMarks / 500 * 100
+    alert("Your percentage is:" + result)
+
+</script>
+
+</body>
+</html>

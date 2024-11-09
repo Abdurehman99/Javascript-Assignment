@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Customize previous assignment "ch_15_16_17" with for loop... -->
+
+
+<script>
+
+
+var courses = [];
+
+for (var i = 1; i <= 5; i++) {
+    var course = prompt("Enter course " + i + " name:");
+    courses.push(course);
+}
+
+alert(courses);
+
+for (var i = 0; i < courses.length; i++) {
+    var editedCourse = prompt("Edit course " + (i + 1) + " name:", courses[i]);
+    courses.splice(i, 1, editedCourse);
+}
+
+alert(courses)
+
+</script>
+
+</body>
+</html>
